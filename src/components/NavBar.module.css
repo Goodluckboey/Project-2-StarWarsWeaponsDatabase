@@ -22,6 +22,7 @@
   width: 10rem;
   font-size: 25px;
   font-family: myFirstFont;
+  border: whitesmoke 1px solid;
 }
 
 .navbar a {
@@ -34,5 +35,5 @@
 .navbar a.active {
   color: whitesmoke;
   padding-bottom: 0.25rem;
-  border-bottom: 4px solid whitesmoke;
+  border-bottom: 1px solid whitesmoke;
 }

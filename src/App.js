@@ -95,6 +95,12 @@ function App() {
       >
         Lord Vader wants you for the Galactic Empire.
       </h3>
+      <div id="cartHolder">
+        <img
+          id="cart"
+          src="https://img.icons8.com/material-rounded/48/ffffff/favorite-cart.png"
+        />
+      </div>
       <div id="vaderHolder">
         <img
           id="vader"

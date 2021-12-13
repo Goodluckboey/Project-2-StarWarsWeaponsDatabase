@@ -62,14 +62,14 @@ html {
 }
 
 .individualCards {
-  background-color: brown;
+  background-color: rgb(41, 41, 41);
   color: blanchedalmond;
   max-width: 600px;
   height: 650px;
   padding: 20px;
   margin: 10px;
   float: left;
-  border: 5px solid white;
+  border: 5px solid rgb(56, 56, 56);
   position: relative;
   display: flex;
   justify-content: center;
@@ -83,6 +83,17 @@ html {
 }
 .image-container {
   display: inline-block;
+}
+
+#cartHolder {
+  display: block;
+  position: relative;
+  top: -150px;
+  left: 1250px;
+}
+
+#cart {
+  position: absolute;
 }
 
 #vader {
@@ -100,8 +111,8 @@ html {
 
 #wantsYou {
   position: relative;
-  top: 130px;
-  left: 300px;
+  top: 150px;
+  left: 500px;
   display: block;
 }
 
