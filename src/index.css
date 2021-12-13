@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: whitesmoke;
+}
+
+html {
+  font-family: "Oxygen", sans-serif;
+}
+
+.centered {
+  margin: 3rem auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(./assets/SfDistantGalaxy-0l3d.ttf);
+}
+
+@font-face {
+  font-family: thinnerFont;
+  src: url(./assets/SfDistantGalaxyOutline-xoeO.ttf);
+}
+
+.StarWarsFont {
+  font-family: myFirstFont;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 30px;
+  word-spacing: 10px;
+}
+
+#title {
+  font-family: thinnerFont;
+  letter-spacing: 1px;
+  font-size: 45px;
+}
+
+.thinnerStarWarsFont {
+  font-family: thinnerFont;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 30px;
+}
+
+#dashBoard {
+  background-color: black;
+  display: block;
+  width: 1000px;
+  height: 1000px;
+}
+
+.individualCards {
+  background-color: brown;
+  color: blanchedalmond;
+  max-width: 600px;
+  height: 650px;
+  padding: 20px;
+  margin: 10px;
+  float: left;
+  border: 5px solid white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card-images {
+  max-width: 200px;
+  height: auto;
+  padding: 5px;
+}
+.image-container {
+  display: inline-block;
+}
+
+#vader {
+  position: absolute;
+  left: 00px;
+  top: -60px;
+  height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  object-position: 0 10%;
+  z-index: -1;
+}
+
+#wantsYou {
+  position: relative;
+  top: 130px;
+  left: 300px;
+  display: block;
+}
+
+#vaderHolder {
+  position: relative;
+}

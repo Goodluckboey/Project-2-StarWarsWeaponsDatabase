@@ -1,0 +1,38 @@
+.navbar {
+  background-color: rgb(17, 17, 17);
+  height: 120px;
+}
+
+.navbar nav {
+  height: 100%;
+}
+
+.navbar ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  margin: 0;
+  padding: 20px;
+}
+
+.navbar li {
+  padding: 25px;
+  margin: 0 1rem;
+  width: 10rem;
+  font-size: 25px;
+  font-family: myFirstFont;
+}
+
+.navbar a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.navbar a:hover,
+.navbar a:active,
+.navbar a.active {
+  color: whitesmoke;
+  padding-bottom: 0.25rem;
+  border-bottom: 4px solid whitesmoke;
+}
