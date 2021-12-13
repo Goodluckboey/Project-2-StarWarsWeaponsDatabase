@@ -99,7 +99,7 @@ html {
 #vader {
   position: absolute;
   left: 00px;
-  top: -60px;
+  top: 0px;
   height: 400px;
   display: block;
   margin-left: auto;
