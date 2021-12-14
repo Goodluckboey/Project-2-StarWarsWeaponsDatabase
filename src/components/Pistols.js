@@ -44,7 +44,7 @@ const Pistols = (props) => {
                       className="purchase-button"
                       onClick={() => props.addToCart(element)}
                     >
-                      PURCHASE THIS FIREARM
+                      ADD TO CART
                     </button>
                   </div>
                 </div>

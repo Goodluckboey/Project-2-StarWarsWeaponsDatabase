@@ -8,9 +8,7 @@ import Cannons from "./components/Cannons";
 import { Route } from "react-router-dom";
 import SearchBar from "./components/SearchBar";
 // import firebase from "./library/firebase";
-
 // import { collection, getDocs } from "firebase/firestore";
-
 // const db = firebase.firestore();
 
 function App() {
@@ -31,9 +29,6 @@ function App() {
         "https://firestore.googleapis.com/v1/projects/star-wars-weapons-info/databases/(default)/documents/weapons"
       );
       const mapJson = await res.json();
-
-      // console.log("mapJson: ", mapJson);
-      // console.log("mapJson.documents:", mapJson.documents);
       for (const element of mapJson.documents) {
         const newObject = {};
         newObject.name = element.fields.name.stringValue;
@@ -52,7 +47,6 @@ function App() {
     }
   };
 
-  // console.log(fullData);
   useEffect(() => {
     makeApiCall();
   }, []);
@@ -76,7 +70,6 @@ function App() {
 
   return (
     <div>
-      {/* <button>Click Me for console log</button> */}
       <NavBar arrayCheck={arrayCheck} cart={cart}></NavBar>
 
       <NavLink exact to="/">
