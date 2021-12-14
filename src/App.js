@@ -15,6 +15,12 @@ import SearchBar from "./components/SearchBar";
 
 function App() {
   const [fullData, setFullData] = useState([]);
+  const [cart, setCart] = useState([]);
+
+  const addToCart = (card) => {
+    setCart((prevState) => [...prevState, card]);
+    console.log("Cart here: ", cart);
+  };
 
   const arrayCheck = () => {
     console.log(fullData.documents);
@@ -96,7 +102,7 @@ function App() {
         <SearchBar></SearchBar>
       </div>
       <Route exact path="/pistols">
-        <Pistols fullData={fullData}></Pistols>
+        <Pistols fullData={fullData} addToCart={addToCart}></Pistols>
       </Route>
       <Route exact path="/rifles">
         <Rifles fullData={fullData}></Rifles>
