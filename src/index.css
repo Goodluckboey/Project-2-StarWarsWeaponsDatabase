@@ -48,6 +48,13 @@ html {
   font-family: thinnerFont;
   letter-spacing: 1px;
   font-size: 45px;
+  text-align: center;
+  color: white;
+  width: 200px;
+  position: absolute;
+  top: -20px;
+  left: -10px;
+  display: block;
 }
 
 .thinnerStarWarsFont {
@@ -99,7 +106,7 @@ h4 {
 .individualCards {
   font-family: mainText;
   vertical-align: 10px;
-  background-color: rgba(24, 24, 24, 0.9);
+  background-color: rgba(24, 24, 24, 0.95);
   color: rgb(234, 234, 250);
   max-width: 500px;
   max-height: 1300px;
@@ -111,7 +118,7 @@ h4 {
   display: flex;
   /* justify-content: center; */
   flex-direction: column;
-  border-radius: 7%;
+  border-radius: 1%;
   text-align: center;
 }
 
@@ -122,7 +129,7 @@ h4 {
   background-color: rgb(10, 10, 10);
   transition: 0.5s;
   transform: scale(1.1);
-  border-radius: 3%;
+  border-radius: 2%;
   color: blanchedalmond;
 }
 
@@ -135,7 +142,6 @@ h4 {
 .image-container div:hover {
   transition: 1s;
   transform: scale(1.025);
-  background-color: tomato;
 }
 
 .weapon-Card .card-images {
@@ -166,20 +172,23 @@ h4 {
 }
 
 .purchase-button {
-  position: relative;
-  left: 100px;
   font-family: MyFirstFont;
   background-color: transparent;
   color: white;
   margin: auto;
-  padding: 10px;
+  padding: 25px;
   border-radius: 10%;
 }
 
+.purchase-button:hover {
+  color: greenyellow;
+  transition: 1s;
+}
+
 body {
-  background-image: url("https://wallpaperaccess.com/full/13392.jpg");
-  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
+    url("https://wallpaperaccess.com/full/13392.jpg");
   background-color: black;
-  background-repeat: no-repeat;
+  background-attachment: fixed;
   /* cursor: url("https://cur.cursors-4u.net/others/oth-1/oth28.cur"), auto; */
 }

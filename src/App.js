@@ -7,6 +7,8 @@ import Rifles from "./components/Rifles";
 import Cannons from "./components/Cannons";
 import { Route } from "react-router-dom";
 import SearchBar from "./components/SearchBar";
+import HomePage from "./pages/HomePage";
+
 // import firebase from "./library/firebase";
 // import { collection, getDocs } from "firebase/firestore";
 // const db = firebase.firestore();
@@ -73,32 +75,22 @@ function App() {
       <NavBar arrayCheck={arrayCheck} cart={cart}></NavBar>
 
       <NavLink exact to="/">
-        <h1
-          id="title"
-          style={{
-            textAlign: "center",
-            color: "white",
-            width: "200px",
-            position: "absolute",
-            top: "-20px",
-            left: "-10px",
-            display: "block",
-          }}
-        >
-          STAR WARS
-        </h1>
+        <h1 id="title">STAR WARS</h1>
       </NavLink>
       <div>
-        <SearchBar></SearchBar>
+        <SearchBar />
       </div>
+      <Route exact path="/">
+        <HomePage />
+      </Route>
       <Route exact path="/pistols">
-        <Pistols fullData={fullData} addToCart={addToCart}></Pistols>
+        <Pistols fullData={fullData} addToCart={addToCart} />
       </Route>
       <Route exact path="/rifles">
-        <Rifles fullData={fullData} addToCart={addToCart}></Rifles>
+        <Rifles fullData={fullData} addToCart={addToCart} />
       </Route>
       <Route exact path="/cannons">
-        <Cannons fullData={fullData} addToCart={addToCart}></Cannons>
+        <Cannons fullData={fullData} addToCart={addToCart} />
       </Route>
     </div>
   );
