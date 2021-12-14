@@ -77,7 +77,7 @@ function App() {
   return (
     <div>
       {/* <button>Click Me for console log</button> */}
-      <NavBar arrayCheck={arrayCheck}></NavBar>
+      <NavBar arrayCheck={arrayCheck} cart={cart}></NavBar>
 
       <NavLink exact to="/">
         <h1
@@ -95,12 +95,6 @@ function App() {
           STAR WARS
         </h1>
       </NavLink>
-      <div id="cartHolder">
-        <img
-          id="cart"
-          src="https://img.icons8.com/material-rounded/48/ffffff/favorite-cart.png"
-        />
-      </div>
       <div>
         <SearchBar></SearchBar>
       </div>

@@ -8,7 +8,6 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background-color: rgb(26, 26, 26);
 }
 
 html {
@@ -31,6 +30,11 @@ html {
 @font-face {
   font-family: thinnerFont;
   src: url(./assets/SfDistantGalaxyOutline-xoeO.ttf);
+}
+
+@font-face {
+  font-family: mainText;
+  src: url(./assets/Stellar-light.otf);
 }
 
 .StarWarsFont {
@@ -80,6 +84,11 @@ h4 {
   margin-left: -25px;
 }
 
+.links {
+  position: relative;
+  bottom: 115px;
+}
+
 #searchbar {
   position: absolute;
   left: 200px;
@@ -89,9 +98,10 @@ h4 {
 }
 
 .individualCards {
+  font-family: mainText;
   vertical-align: 10px;
-  background-color: rgb(24, 24, 24);
-  color: blanchedalmond;
+  background-color: rgba(24, 24, 24, 0.9);
+  color: rgb(234, 234, 250);
   max-width: 500px;
   max-height: 1300px;
   padding: 30px;
@@ -106,14 +116,27 @@ h4 {
   text-align: center;
 }
 
-.description {
+/* .description {
   display: none;
-}
+} */
 .weapon-Card div:hover {
   background-color: rgb(10, 10, 10);
-  transition: 1s;
-  border-radius: 3%;
+  transition: 0.5s;
   transform: scale(1.1);
+  border-radius: 3%;
+  color: blanchedalmond;
+}
+
+.image-container {
+  display: inline-block;
+  background-color: white;
+  border-radius: 5%;
+  /* display: flex; */
+}
+.image-container div:hover {
+  transition: 1s;
+  transform: scale(1.025);
+  background-color: tomato;
 }
 
 .weapon-Card .card-images {
@@ -125,22 +148,18 @@ h4 {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.image-container {
-  display: inline-block;
-  background-color: white;
-  border-radius: 5%;
-  /* display: flex; */
-}
-
 #cartHolder {
   display: block;
   position: relative;
-  top: -85px;
   left: 1250px;
+  top: 40px;
 }
 
-#cart {
-  position: absolute;
+#Num-Cart-Items {
+  color: white;
+  position: relative;
+  top: -85px;
+  right: -45px;
 }
 
 .button-div {
@@ -160,4 +179,8 @@ h4 {
 
 body {
   background-image: url("https://wallpaperaccess.com/full/13392.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* cursor: url("https://cur.cursors-4u.net/others/oth-1/oth28.cur"), auto; */
 }

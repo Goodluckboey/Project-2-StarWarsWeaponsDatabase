@@ -12,7 +12,13 @@ const Pistols = (props) => {
         ? pistolData.map((element) => {
             if (element.type === "Pistol") {
               return (
-                <div className="individualCards">
+                <div
+                  className="individualCards"
+                  data-aos="fade-down"
+                  data-aos-easing="ease-in-out"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                >
                   <h1>{element.name}</h1>
                   <ul className="list">
                     <li>{element.cost} Galactic Credits</li>

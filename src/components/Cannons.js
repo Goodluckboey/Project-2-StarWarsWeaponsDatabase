@@ -14,7 +14,9 @@ const Cannons = (props) => {
               return (
                 <div
                   className="individualCards"
-                  onClick={() => props.addToCart(element)}
+                  data-aos="fade-down"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
                 >
                   <h1>{element.name}</h1>
                   <ul className="list">
