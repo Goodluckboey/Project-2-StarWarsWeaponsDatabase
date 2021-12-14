@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from "react";
 
-const Pistols = (props) => {
-  const [pistolData, setPistolData] = useState();
+const Cannons = (props) => {
+  const [infoData, setinfoData] = useState();
   useEffect(() => {
-    setPistolData(props.fullData);
+    setinfoData(props.fullData);
   }, [props]);
 
   return (
-    <div className="pistol-Card">
-      {pistolData
-        ? pistolData.map((element) => {
-            if (element.type === "Pistol") {
+    <div className="weapon-Card">
+      {infoData
+        ? infoData.map((element) => {
+            if (element.type === "Cannon") {
               return (
                 <div className="individualCards">
                   <h1>{element.name}</h1>
-                  <ul>
+                  <ul className="list">
                     <li>{element.cost} Galactic Credits</li>
                     <li>Weighs an estimated {element.weight} kg</li>
                     <li>Weapon Type: Blaster {element.type}</li>
@@ -42,4 +42,4 @@ const Pistols = (props) => {
   );
 };
 
-export default Pistols;
+export default Cannons;

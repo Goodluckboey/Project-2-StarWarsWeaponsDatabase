@@ -3,7 +3,10 @@ import NavBar from "./components/NavBar";
 import { NavLink } from "react-router-dom";
 import "./index.css";
 import Pistols from "./components/Pistols";
+import Rifles from "./components/Rifles";
+import Cannons from "./components/Cannons";
 import { Route } from "react-router-dom";
+import SearchBar from "./components/SearchBar";
 // import firebase from "./library/firebase";
 
 // import { collection, getDocs } from "firebase/firestore";
@@ -67,7 +70,7 @@ function App() {
       {/* <button>Click Me for console log</button> */}
       <NavBar arrayCheck={arrayCheck}></NavBar>
 
-      <NavLink to="/">
+      <NavLink exact to="/">
         <h1
           id="title"
           style={{
@@ -83,36 +86,23 @@ function App() {
           STAR WARS
         </h1>
       </NavLink>
-
-      <h3
-        id="wantsYou"
-        className="thinnerStarWarsFont"
-        style={{
-          textAlign: "center",
-          width: "500px",
-          margin: "auto",
-        }}
-      >
-        Lord Vader wants you for the Galactic Empire.
-      </h3>
       <div id="cartHolder">
         <img
           id="cart"
           src="https://img.icons8.com/material-rounded/48/ffffff/favorite-cart.png"
         />
       </div>
-      <div id="vaderHolder">
-        <img
-          id="vader"
-          src="https://womenwriteaboutcomics.com/wp-content/uploads/2020/02/Darth-Vader-1-Cover-A-featured-image.jpg"
-          alt="vader"
-          height="1000px"
-          width="2000px"
-        ></img>
+      <div>
+        <SearchBar></SearchBar>
       </div>
-
       <Route exact path="/pistols">
         <Pistols fullData={fullData}></Pistols>
+      </Route>
+      <Route exact path="/rifles">
+        <Rifles fullData={fullData}></Rifles>
+      </Route>
+      <Route exact path="/cannons">
+        <Cannons fullData={fullData}></Cannons>
       </Route>
     </div>
   );

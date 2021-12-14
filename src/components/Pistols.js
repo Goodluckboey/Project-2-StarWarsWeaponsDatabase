@@ -7,20 +7,19 @@ const Pistols = (props) => {
   }, [props]);
 
   return (
-    <div className="pistol-Card">
+    <div className="weapon-Card">
       {pistolData
         ? pistolData.map((element) => {
             if (element.type === "Pistol") {
               return (
                 <div className="individualCards">
                   <h1>{element.name}</h1>
-                  <ul>
+                  <ul className="list">
                     <li>{element.cost} Galactic Credits</li>
                     <li>Weighs an estimated {element.weight} kg</li>
                     <li>Weapon Type: Blaster {element.type}</li>
-                    <h4>{element.description}</h4>
                   </ul>
-
+                  <h4 className="description">{element.description}</h4>
                   <div className="image-container">
                     <img
                       className="card-images"
