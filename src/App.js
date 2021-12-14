@@ -19,7 +19,6 @@ function App() {
 
   const addToCart = (card) => {
     setCart((prevState) => [...prevState, card]);
-    console.log("Cart here: ", cart);
   };
 
   const arrayCheck = () => {
@@ -33,8 +32,8 @@ function App() {
       );
       const mapJson = await res.json();
 
-      console.log("mapJson: ", mapJson);
-      console.log("mapJson.documents:", mapJson.documents);
+      // console.log("mapJson: ", mapJson);
+      // console.log("mapJson.documents:", mapJson.documents);
       for (const element of mapJson.documents) {
         const newObject = {};
         newObject.name = element.fields.name.stringValue;
@@ -53,10 +52,14 @@ function App() {
     }
   };
 
-  console.log(fullData);
+  // console.log(fullData);
   useEffect(() => {
     makeApiCall();
   }, []);
+
+  useEffect(() => {
+    console.log("Cart: ", cart);
+  }, [cart]);
 
   // async function getApi() {
   //   const query = await getDocs(collection(db, "weapons"));
@@ -105,10 +108,10 @@ function App() {
         <Pistols fullData={fullData} addToCart={addToCart}></Pistols>
       </Route>
       <Route exact path="/rifles">
-        <Rifles fullData={fullData}></Rifles>
+        <Rifles fullData={fullData} addToCart={addToCart}></Rifles>
       </Route>
       <Route exact path="/cannons">
-        <Cannons fullData={fullData}></Cannons>
+        <Cannons fullData={fullData} addToCart={addToCart}></Cannons>
       </Route>
     </div>
   );

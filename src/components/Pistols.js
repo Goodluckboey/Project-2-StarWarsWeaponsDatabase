@@ -20,7 +20,7 @@ const Pistols = (props) => {
                     <li>Weapon Type: Blaster {element.type}</li>
                   </ul>
                   <h4 className="description">{element.description}</h4>
-                  <div className="image-container">
+                  <section className="image-container">
                     <img
                       className="card-images"
                       src={element.url1}
@@ -31,6 +31,15 @@ const Pistols = (props) => {
                       src={element.url2}
                       alt=""
                     ></img>
+                  </section>
+                  <br />
+                  <div className="button-div">
+                    <button
+                      className="purchase-button"
+                      onClick={() => props.addToCart(element)}
+                    >
+                      PURCHASE THIS FIREARM
+                    </button>
                   </div>
                 </div>
               );

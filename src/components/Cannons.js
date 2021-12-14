@@ -12,7 +12,10 @@ const Cannons = (props) => {
         ? infoData.map((element) => {
             if (element.type === "Cannon") {
               return (
-                <div className="individualCards">
+                <div
+                  className="individualCards"
+                  onClick={() => props.addToCart(element)}
+                >
                   <h1>{element.name}</h1>
                   <ul className="list">
                     <li>{element.cost} Galactic Credits</li>
@@ -21,7 +24,7 @@ const Cannons = (props) => {
                     <h4>{element.description}</h4>
                   </ul>
 
-                  <div className="image-container">
+                  <section className="image-container">
                     <img
                       className="card-images"
                       src={element.url1}
@@ -32,6 +35,14 @@ const Cannons = (props) => {
                       src={element.url2}
                       alt=""
                     ></img>
+                  </section>
+                  <div className="button-div">
+                    <button
+                      className="purchase-button"
+                      onClick={() => props.addToCart(element)}
+                    >
+                      PURCHASE THIS FIREARM
+                    </button>
                   </div>
                 </div>
               );
