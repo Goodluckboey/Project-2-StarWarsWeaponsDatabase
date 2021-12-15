@@ -18,30 +18,32 @@ const NavBar = (props) => {
   return (
     <header className={styles.navbar}>
       <nav>
-        <div id="cartHolder">
-          <img
-            id="cart"
-            src="https://img.icons8.com/material-rounded/48/ffffff/favorite-cart.png"
-          />
-          <h1 id="Num-Cart-Items">{numbOfCartItems}</h1>
-        </div>
         <ul className="links">
           <li>
             <NavLink activeClassName={styles.active} to="/pistols">
-              Pistols
+              Blaster Pistols
             </NavLink>
           </li>
           <li>
             <NavLink activeClassName={styles.active} to="/rifles">
-              Rifles
+              Rifle Variants
             </NavLink>
           </li>
           <li>
             <NavLink activeClassName={styles.active} to="/cannons">
-              Cannons
+              Repeating Cannons
             </NavLink>
           </li>
         </ul>
+        <div id="cartHolder">
+          <NavLink to="/yourcart">
+            <img
+              id="cart"
+              src="https://img.icons8.com/material-rounded/48/ffffff/favorite-cart.png"
+            />
+          </NavLink>
+          <h1 id="Num-Cart-Items">{numbOfCartItems}</h1>
+        </div>
       </nav>
     </header>
   );

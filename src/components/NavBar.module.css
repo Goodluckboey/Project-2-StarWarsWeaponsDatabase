@@ -17,11 +17,12 @@
 }
 
 .navbar li {
-  padding: 25px;
-  margin: 0 1rem;
-  width: 10rem;
-  font-size: 25px;
+  padding: 20px;
+  margin: 0 0.3rem;
+  width: 18rem;
+  font-size: 18px;
   font-family: myFirstFont;
+  line-height: 30px;
 }
 
 .navbar a {
@@ -33,6 +34,6 @@
 .navbar a:active,
 .navbar a.active {
   color: whitesmoke;
-  padding-bottom: 0.25rem;
+  padding-bottom: 1rem;
   border-bottom: 1px solid whitesmoke;
 }

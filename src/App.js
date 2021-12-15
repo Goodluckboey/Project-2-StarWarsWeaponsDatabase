@@ -8,6 +8,7 @@ import Cannons from "./components/Cannons";
 import { Route } from "react-router-dom";
 import SearchBar from "./components/SearchBar";
 import HomePage from "./pages/HomePage";
+import YourCart from "./pages/YourCart";
 
 // import firebase from "./library/firebase";
 // import { collection, getDocs } from "firebase/firestore";
@@ -80,6 +81,9 @@ function App() {
       <div>
         <SearchBar />
       </div>
+      <Route exact path="/yourcart">
+        <YourCart cart={cart} setCart={setCart}></YourCart>
+      </Route>
       <Route exact path="/">
         <HomePage />
       </Route>
