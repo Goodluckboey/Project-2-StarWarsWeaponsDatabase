@@ -45,6 +45,7 @@ const NavBar = (props) => {
             <img
               id="cart"
               src="https://img.icons8.com/material-rounded/48/ffffff/favorite-cart.png"
+              alt=""
             />
           </NavLink>
           <h1 id="Num-Cart-Items">{numbOfCartItems}</h1>

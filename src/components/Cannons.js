@@ -13,14 +13,20 @@ const Cannons = (props) => {
             <div className="individualCards">
               <h1>{element.name}</h1>
               <section className="image-container">
-                <img className="card-images" src={element.url1} alt="" j></img>
-                <img className="card-images" src={element.url2} alt=""></img>
+                <img className="card-images" src={element.url1} alt=""></img>
+                {/* <img className="card-images" src={element.url2} alt=""></img> */}
               </section>
-              <ul className="list">
-                <li>{element.cost} Galactic Credits</li>
+              <ul
+                className="list"
+  
+              >
+                <br />
+                <li style={{ fontWeight: "bold" }}>
+                  {element.cost} Galactic Credits
+                </li>
                 <li>Weight: Approximately {element.weight} kg</li>
                 <li style={{ fontWeight: "bold" }}>{element.manufacturer}</li>
-                <br/>
+                <br />
                 <li>{element.short}</li>
               </ul>
               <div className="button-div">

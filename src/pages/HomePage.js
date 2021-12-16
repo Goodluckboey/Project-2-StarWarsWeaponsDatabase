@@ -8,13 +8,13 @@ const HomePage = () => {
     <div className="HomePage">
       <Splide
         options={{
-          gap: "0rem",
+          // gap: "0rem",
           speed: "2000",
-          // autoplay: true,
+          autoplay: true,
           type: "loop",
           pauseOnHover: true,
           wheel: true,
-          interval: 0,
+          // interval: 10,
           drag: true,
         }}
       >

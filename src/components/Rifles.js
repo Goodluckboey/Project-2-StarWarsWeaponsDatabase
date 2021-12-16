@@ -14,10 +14,13 @@ const Rifles = (props) => {
               <h1>{element.name}</h1>
               <section className="image-container">
                 <img className="card-images" src={element.url1} alt=""></img>
-                <img className="card-images" src={element.url2} alt=""></img>
+                {/* <img className="card-images" src={element.url2} alt=""></img> */}
               </section>
               <ul className="list">
-                <li>{element.cost} Galactic Credits</li>
+                <br />
+                <li style={{ fontWeight: "bold" }}>
+                  {element.cost} Galactic Credits
+                </li>
                 <li>Weight: Approximately {element.weight} kg</li>
                 <li style={{ fontWeight: "bold" }}>{element.manufacturer}</li>
                 <br />

@@ -10,21 +10,24 @@ const FullCollection = (props) => {
     ? collectionData.map((element) => {
         return (
           <div className="individualCards">
-            {/* <div className="individualCards"> */}
             <h1>{element.name}</h1>
-
             <section className="image-container">
               <img className="card-images" src={element.url1} alt=""></img>
-              <img className="card-images" src={element.url2} alt=""></img>
+              {/* <img className="card-images" src={element.url2} alt=""></img> */}
             </section>
-            <ul className="list">
-              <li>{element.cost} Galactic Credits</li>
-              {/* <li>Weight: Approximately {element.weight} kg</li>
+            <ul
+              className="list"
+        
+            >
+              <br />
+              <li style={{ fontWeight: "bold" }}>
+                {element.cost} Galactic Credits
+              </li>
+              <li>Weight: Approximately {element.weight} kg</li>
               <li style={{ fontWeight: "bold" }}>{element.manufacturer}</li>
-              <br /> */}
-              {/* <li>{element.short}</li> */}
+              <br />
+              <li>{element.short}</li>
             </ul>
-            <br />
             <div className="button-div">
               <button
                 className="purchase-button"

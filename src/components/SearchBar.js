@@ -1,8 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
-import { useEffect } from "react/cjs/react.development";
-import { browserHistory } from "react-router";
-import { createHashHistory } from "history";
 
 const SearchBar = (props) => {
   // const [searchData, setSearchData] = useState("");
@@ -21,7 +18,6 @@ const SearchBar = (props) => {
 
   return (
     <div>
-      {console.log("searchData: ", props.searchData)}
       <form>
         <input
           id="searchbar"

@@ -28,10 +28,17 @@ const YourCart = (props) => {
             }}
           ></img>
         </section>
-        <ul className="list">
+        <ul className="list" style={{ width: "100%" }}>
+          <br />
           <li>{element.cost} Galactic Credits</li>
           <li>{element.description}</li>
-          <li style={{ fontWeight: "bold", textDecorationLine: "underline" }}>
+          <li
+            style={{
+              fontWeight: "bold",
+              textDecorationLine: "underline",
+              width: "50%",
+            }}
+          >
             NO REFUNDS
           </li>
         </ul>

@@ -58,10 +58,6 @@ function App() {
     makeApiCall();
   }, []);
 
-  useEffect(() => {
-    console.log("Cart: ", cart);
-  }, [cart]);
-
   // async function getApi() {
   //   const query = await getDocs(collection(db, "weapons"));
 
@@ -91,11 +87,18 @@ function App() {
       />
 
       <Route exact path="/searchpage">
-        <SearchPage searchData={searchData} fullData={fullData}></SearchPage>
+        <SearchPage
+          searchData={searchData}
+          fullData={fullData}
+          addToCart={addToCart}
+        ></SearchPage>
       </Route>
 
       <Route exact path="/fullcollection">
-        <FullCollection fullData={fullData}></FullCollection>
+        <FullCollection
+          fullData={fullData}
+          addToCart={addToCart}
+        ></FullCollection>
       </Route>
 
       <Route exact path="/yourcart">
