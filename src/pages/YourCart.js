@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink, Link } from "react-router-dom";
 
 const YourCart = (props) => {
   const cartDataArray = props.cart;
@@ -93,7 +94,24 @@ const YourCart = (props) => {
           </h1>
           <div className="cartItemsDiv">{produceCartCards}</div>
           <div id="resetCart">
-            <button onClick={resetCart}>Reset Your Cart!</button>
+            <div
+              style={{
+                display: "flex",
+                marginLeft: " auto",
+                marginTop: "20px",
+              }}
+            >
+              <button
+                onClick={resetCart}
+                style={{
+                  position: "relative",
+                  marginLeft: "auto",
+                }}
+              >
+                Reset Your Cart!
+              </button>
+              <Link className="checkout">Check Out</Link>
+            </div>
           </div>
         </div>
       ) : (

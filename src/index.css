@@ -164,6 +164,11 @@ h4 {
   top: 0px;
 }
 
+.individualCards h1 {
+  min-height: 55px;
+  line-height: 25px;
+}
+
 .shoppingCards {
   /* vertical-align: 10px; */
   background-color: rgba(24, 24, 24, 0.95);
@@ -187,7 +192,7 @@ h4 {
   transform: scale(1.1);
   border-radius: 2%;
   color: blanchedalmond;
-  top: 32px;
+  /* top: 32px; */
   z-index: 101;
 }
 
@@ -223,13 +228,14 @@ h4 {
   border: rgba(0, 255, 55, 0.2) 1px solid;
   padding: 15px;
   border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 #cartHolder {
   position: relative;
   width: 50px;
-  left: 525px;
-  top: -95px;
+  left: 1780px;
+  top: 20px;
   z-index: 100;
 }
 
@@ -237,7 +243,7 @@ h4 {
   color: white;
   position: relative;
   top: -85px;
-  right: -85px;
+  right: 0px;
 }
 
 .cartItemsDiv {
@@ -256,6 +262,8 @@ h4 {
 
 .button-div {
   padding: 15px;
+  position: relative;
+  margin-top: auto;
 }
 
 .purchase-button {
@@ -265,11 +273,32 @@ h4 {
   margin: auto;
   padding: 25px;
   border-radius: 10%;
+  position: relative;
+  bottom: 0px;
 }
 
 .purchase-button:hover {
   color: greenyellow;
   transition: 1s;
+}
+
+.checkout {
+  color: rgb(230, 230, 230);
+  padding: 1px 20px;
+  border: 1px cyan solid;
+  margin-left: 20px;
+  background-color: rgba(0, 119, 255, 0.144);
+  margin-right: 110px;
+  border-radius: 5%;
+  transition: 0.5s;
+}
+
+.checkout:hover {
+  transform: scale(1.1);
+  background-color: rgba(0, 119, 255, 0.144);
+  border: 1px rgb(51, 255, 0) solid;
+  color: rgb(51, 255, 0);
+  padding: 5px 20px;
 }
 
 body {
@@ -284,6 +313,10 @@ body {
   position: relative;
   display: flex;
   top: 50px;
+}
+
+.firstRow {
+  z-index: 150;
 }
 
 #banner-img {
