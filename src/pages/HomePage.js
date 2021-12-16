@@ -1,18 +1,21 @@
 import React from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
+import { NavLink } from "react-router-dom";
 
 const HomePage = () => {
   return (
     <div className="HomePage">
       <Splide
         options={{
-          gap: "1rem",
-          transition: "1s",
-          //   autoplay: true,
+          gap: "0rem",
+          speed: "2000",
+          // autoplay: true,
           type: "loop",
-          pauseOnHover: false,
-          //   resetProgress: false,
+          pauseOnHover: true,
+          wheel: true,
+          interval: 0,
+          drag: true,
         }}
       >
         <SplideSlide
@@ -39,8 +42,62 @@ const HomePage = () => {
                 THE
               </h2>
               <h2 id="A68-Title">A68 MARKET</h2>
+              <p
+                style={{
+                  fontFamily: "A68MarketFont",
+                  // color: "rgb(253, 200, 132)",
+                  color: "white",
+                  letterSpacing: "2px",
+                  lineHeight: "25px",
+                  fontSize: "20px",
+                  position: "relative",
+                  top: "-100px",
+                }}
+              >
+                Our Droids work 32 hours daily
+                <br />
+                For Hunters and Empires Exclusively
+              </p>
+              <div className="buttonGrp">
+                <NavLink to="/fullcollection">
+                  <button
+                    style={{
+                      position: "relative",
+                      top: "-85px",
+                      padding: "7px",
+                      // fontFamily: "A68MarketFont",
+                      fontWeight: "strong",
+                      left: "300px",
+                      margin: "10px",
+                      backgroundColor: "rgb(181, 118, 31)",
+                      color: "white",
+                      borderRadius: "5%",
+                    }}
+                  >
+                    Browse Collection
+                  </button>
+                </NavLink>
+                <NavLink to="/yourcart">
+                  <button
+                    style={{
+                      position: "relative",
+                      top: "-85px",
+                      padding: "7px",
+                      // fontFamily: "A68MarketFont",
+                      fontWeight: "bold",
+                      left: "300px",
+                      margin: "10px",
+                      backgroundColor: "transparent",
+                      color: "white",
+                      borderRadius: "5%",
+                    }}
+                  >
+                    Your Cart
+                  </button>
+                </NavLink>
+              </div>
             </div>
-          </div>{" "}
+          </div>
         </SplideSlide>
         <SplideSlide>
           <div className="firstRow">

@@ -9,6 +9,8 @@ import { Route } from "react-router-dom";
 import SearchBar from "./components/SearchBar";
 import HomePage from "./pages/HomePage";
 import YourCart from "./pages/YourCart";
+import SearchPage from "./pages/SearchPage";
+import FullCollection from "./pages/FullCollection";
 
 // import firebase from "./library/firebase";
 // import { collection, getDocs } from "firebase/firestore";
@@ -17,10 +19,11 @@ import YourCart from "./pages/YourCart";
 function App() {
   const [fullData, setFullData] = useState([]);
   const [cart, setCart] = useState([]);
-
+  const [query, setQuery] = useState("");
   const addToCart = (card) => {
     setCart((prevState) => [...prevState, card]);
   };
+  const [searchData, setSearchData] = useState("");
 
   const arrayCheck = () => {
     console.log(fullData.documents);
@@ -42,6 +45,7 @@ function App() {
         newObject.url2 = element.fields.url2.stringValue;
         newObject.cost = element.fields.cost.integerValue;
         newObject.weight = element.fields.weight.integerValue;
+        newObject.short = element.fields.short.stringValue;
 
         setFullData((prevState) => [...prevState, newObject]);
       }
@@ -78,9 +82,22 @@ function App() {
       <NavLink exact to="/">
         <h1 id="title">STAR WARS</h1>
       </NavLink>
-      <div>
-        <SearchBar />
-      </div>
+
+      <SearchBar
+        query={query}
+        setQuery={setQuery}
+        setSearchData={setSearchData}
+        searchData={searchData}
+      />
+
+      <Route exact path="/searchpage">
+        <SearchPage searchData={searchData} fullData={fullData}></SearchPage>
+      </Route>
+
+      <Route exact path="/fullcollection">
+        <FullCollection fullData={fullData}></FullCollection>
+      </Route>
+
       <Route exact path="/yourcart">
         <YourCart cart={cart} setCart={setCart}></YourCart>
       </Route>

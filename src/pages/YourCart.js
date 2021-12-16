@@ -15,7 +15,7 @@ const YourCart = (props) => {
         style={{ backgroundColor: "rgba(53, 73, 84, 0.3)", borderRadius: "2%" }}
       >
         {/* <div className="individualCards"> */}
-        <h1>{element.name}</h1>
+        <h1 style={{ fontFamily: "A68MarketFont" }}>{element.name}</h1>
 
         <section>
           <img
@@ -31,6 +31,9 @@ const YourCart = (props) => {
         <ul className="list">
           <li>{element.cost} Galactic Credits</li>
           <li>{element.description}</li>
+          <li style={{ fontWeight: "bold", textDecorationLine: "underline" }}>
+            NO REFUNDS
+          </li>
         </ul>
         <br />
         <button
@@ -68,9 +71,7 @@ const YourCart = (props) => {
           backgroundColor: "white",
         }}
       >
-        <h1 style={{ backgroundColor: "white" }}>
-          Are you sure you want to empty your cart?
-        </h1>
+        {props.setCart([])}
         {console.log("resetCart Working")}
       </div>
     );

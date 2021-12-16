@@ -21,14 +21,9 @@ const Pistols = (props) => {
               <ul className="list">
                 <li>{element.cost} Galactic Credits</li>
                 <li>Weight: Approximately {element.weight} kg</li>
-                <li>
-                  Manufacturer:
-                  <h5
-                    style={{ fontFamily: "MYFirstFont", letterSpacing: "3px" }}
-                  >
-                    {element.manufacturer}
-                  </h5>
-                </li>
+                <li style={{ fontWeight: "bold" }}>{element.manufacturer}</li>
+                <br />
+                <li>{element.short}</li>
               </ul>
               <br />
               <div className="button-div">

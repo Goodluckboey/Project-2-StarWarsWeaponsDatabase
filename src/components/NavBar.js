@@ -20,6 +20,11 @@ const NavBar = (props) => {
       <nav>
         <ul className="links">
           <li>
+            <NavLink activeClassName={styles.active} to="/fullcollection">
+              Collection
+            </NavLink>
+          </li>
+          <li>
             <NavLink activeClassName={styles.active} to="/pistols">
               Blaster Pistols
             </NavLink>

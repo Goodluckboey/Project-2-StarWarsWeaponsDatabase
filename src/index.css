@@ -38,7 +38,7 @@ html {
 
 @font-face {
   font-family: A68MarketFont;
-  src: url(./assets/texgyretermes-regular.otf);
+  src: url(./assets/Megrim.ttf);
 }
 
 .StarWarsFont {
@@ -113,7 +113,7 @@ h4 {
   vertical-align: 10px;
   background-color: rgba(24, 24, 24, 0.95);
   color: rgb(234, 234, 250);
-  max-width: 500px;
+  width: 400px;
   max-height: 1300px;
   padding: 30px;
   margin: 20px;
@@ -151,6 +151,7 @@ h4 {
   border-radius: 2%;
   color: blanchedalmond;
   top: 32px;
+  z-index: 101;
 }
 
 .image-container {
@@ -167,10 +168,17 @@ h4 {
   padding: 5px;
 }
 
+.card-images {
+  height: 100px;
+}
+
 .weapon-Card {
   width: 900px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 30%);
+  grid-column-gap: 135px;
   top: 0px;
+  margin-left: 110px;
 }
 
 #cart {
@@ -181,7 +189,7 @@ h4 {
   /* display: block; */
   position: absolute;
   width: 50px;
-  left: 900px;
+  left: 600px;
   top: 35px;
   z-index: 100;
 }
@@ -274,8 +282,8 @@ body {
 
 #SecondHolder {
   position: relative;
-  background-color: rgb(31, 19, 2);
-  width: 50%;
+  background-color: rgb(16, 16, 20);
+  width: 49.2%;
   height: auto;
   text-align: center;
   color: white;
