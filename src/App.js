@@ -12,6 +12,7 @@ import YourCart from "./pages/YourCart";
 import SearchPage from "./pages/SearchPage";
 import FullCollection from "./pages/FullCollection";
 import Bounties from "./pages/Bounties";
+// import CheckOut from "./pages/CheckOut";
 
 // import firebase from "./library/firebase";
 // import { collection, getDocs } from "firebase/firestore";
@@ -108,7 +109,9 @@ function App() {
         setSearchData={setSearchData}
         searchData={searchData}
       />
-
+      {/* <Route>
+        <CheckOut></CheckOut>
+      </Route> */}
       <Route exact path="/bounties">
         <Bounties bountyData={bountyData}></Bounties>
       </Route>

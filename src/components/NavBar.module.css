@@ -18,9 +18,9 @@
 }
 
 .navbar li {
-  padding: 10px;
+  padding: 10px 30px;
   margin: 0rem;
-  width: 15rem;
+
   font-size: 18px;
   font-family: myFirstFont;
   line-height: 30px;

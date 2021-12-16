@@ -4,6 +4,8 @@ import { NavLink, Link } from "react-router-dom";
 const YourCart = (props) => {
   const cartDataArray = props.cart;
 
+  let sumTotal = 0;
+
   const produceCartCards = cartDataArray.map((element, index) => {
     return (
       <div
@@ -15,7 +17,7 @@ const YourCart = (props) => {
         data-aos-duration="500"
         style={{ backgroundColor: "rgba(53, 73, 84, 0.3)", borderRadius: "2%" }}
       >
-        {/* <div className="individualCards"> */}
+        {(sumTotal += parseInt(element.cost))}
         <h1 style={{ fontFamily: "A68MarketFont" }}>{element.name}</h1>
 
         <section>
@@ -102,6 +104,17 @@ const YourCart = (props) => {
                 marginBottom: "100px",
               }}
             >
+              <div
+                style={{
+                  position: "relative",
+                  margin: "auto",
+                  right: "-1110px",
+                  bottom: "50px",
+                  fontFamily: "mainText",
+                }}
+              >
+                Cart Total: {sumTotal} Galactic Credits
+              </div>
               <button
                 onClick={resetCart}
                 style={{
@@ -111,7 +124,13 @@ const YourCart = (props) => {
               >
                 Reset Your Cart!
               </button>
-              <Link className="checkout">Check Out</Link>
+              <a
+                className="checkout"
+                target="_blank"
+                href="https://support.xfers.com/hc/article_attachments/360097138911/Screenshot_2021-06-01_at_12.49.19_PM.png"
+              >
+                Check Out
+              </a>
             </div>
           </div>
         </div>

@@ -360,6 +360,7 @@ body {
   height: auto;
   text-align: center;
   color: white;
+  border: darkred 0.5px solid;
 }
 
 #SecondInfo {
@@ -379,4 +380,40 @@ body {
   color: rgb(94, 0, 20);
   font-size: 100px;
   letter-spacing: 10px;
+}
+
+.HomePage {
+  display: block;
+}
+
+.disclaimer {
+  color: white;
+  font-weight: lighter;
+  font-size: 9px;
+  /* border: white 1px solid; */
+  position: relative;
+  top: 190px;
+  height: 100px;
+  display: grid;
+}
+
+#rightsReserved {
+  text-align: center;
+}
+
+.icon {
+  position: relative;
+  width: 1.5%;
+  padding: 5px;
+  left: 900px;
+}
+
+.iconsGroup {
+  filter: grayscale(100%);
+}
+
+#mando {
+  width: 35%;
+  position: relative;
+  bottom: 50px;
 }

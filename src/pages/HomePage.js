@@ -10,7 +10,7 @@ const HomePage = () => {
         options={{
           // gap: "0rem",
           speed: "3000",
-          autoplay: true,
+          // autoplay: true,
           type: "loop",
           pauseOnHover: true,
           wheel: true,
@@ -110,12 +110,51 @@ const HomePage = () => {
             <div
               id="SecondHolder"
               style={{ position: "relative", left: "-945px" }}
-            ></div>
+            >
+              <p
+                style={{
+                  color: "darkred",
+                  fontFamily: "MYFirstFont",
+                  fontSize: "50px",
+                }}
+              >
+                Massacre at <br />
+                Arvala-7!
+              </p>
+              <p
+                style={{
+                  color: "white",
+                  fontFamily: "thinnerFont",
+                  fontSize: "55px",
+                }}
+              >
+                Guild Hunter "Mando" Suspected!
+              </p>
+              <img
+                id="mando"
+                src="https://static1.srcdn.com/wordpress/wp-content/uploads/2019/11/The-Mandalorian-Helmet-and-Episode-1-Concept-Art.jpg"
+                alt=""
+              ></img>
+            </div>
           </div>
         </SplideSlide>
         <SplideSlide>
           <div className="firstRow">
             <div style={{ height: "387px", width: "100%" }}>
+              <h1
+                style={{
+                  position: "absolute",
+                  color: "gold",
+                  zIndex: "500",
+                  fontFamily: "thinnerFont",
+                  fontSize: "50px",
+                  padding: "50px",
+                }}
+              >
+                Sign up now for a chance <br />
+                <br />
+                to buy your own Clone Army!
+              </h1>
               <img
                 style={{ objectfit: "none" }}
                 id="banner-img-3"
@@ -126,6 +165,38 @@ const HomePage = () => {
           </div>
         </SplideSlide>
       </Splide>
+
+      <div className="disclaimer">
+        <p style={{ textAlign: "center" }}>Follow us!</p>
+        <div className="iconsGroup">
+          <a target="_blank" href="https://www.linkedin.com/in/patrick-boey/">
+            <img
+              className="icon"
+              src="https://cdn-icons-png.flaticon.com/512/281/281764.png"
+              alt=""
+            ></img>
+            <img
+              className="icon"
+              src="https://cdn-icons-png.flaticon.com/512/124/124010.png"
+              alt=""
+            ></img>
+            <img
+              className="icon"
+              src="https://cdn-icons-png.flaticon.com/512/281/281769.png"
+              alt=""
+            ></img>
+            <img
+              className="icon"
+              src="https://cdn-icons-png.flaticon.com/512/124/124034.png"
+              alt=""
+            ></img>{" "}
+          </a>
+        </div>
+        <p id="rightsReserved">
+          All products shown here are works of fiction, and only in use for
+          studying purposes. All Rights Reserved
+        </p>
+      </div>
     </div>
   );
 };
