@@ -11,6 +11,7 @@ import HomePage from "./pages/HomePage";
 import YourCart from "./pages/YourCart";
 import SearchPage from "./pages/SearchPage";
 import FullCollection from "./pages/FullCollection";
+import Bounties from "./pages/Bounties";
 
 // import firebase from "./library/firebase";
 // import { collection, getDocs } from "firebase/firestore";
@@ -85,6 +86,10 @@ function App() {
         setSearchData={setSearchData}
         searchData={searchData}
       />
+
+      <Route>
+        <Bounties></Bounties>
+      </Route>
 
       <Route exact path="/searchpage">
         <SearchPage

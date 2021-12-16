@@ -28,7 +28,7 @@ const YourCart = (props) => {
             }}
           ></img>
         </section>
-        <ul className="list" style={{ width: "100%" }}>
+        <ul className="list2" style={{ width: "100%" }}>
           <br />
           <li>{element.cost} Galactic Credits</li>
           <li>{element.description}</li>

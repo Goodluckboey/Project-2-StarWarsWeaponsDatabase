@@ -9,7 +9,7 @@ const HomePage = () => {
       <Splide
         options={{
           // gap: "0rem",
-          speed: "2000",
+          speed: "3000",
           autoplay: true,
           type: "loop",
           pauseOnHover: true,
