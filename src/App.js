@@ -21,7 +21,7 @@ function App() {
   const [fullData, setFullData] = useState([]);
   const [cart, setCart] = useState([]);
   const [query, setQuery] = useState("");
-  const [bountyData, setBountyData] = useState([])
+  const [bountyData, setBountyData] = useState([]);
 
   const addToCart = (card) => {
     setCart((prevState) => [...prevState, card]);
@@ -58,17 +58,27 @@ function App() {
   };
 
   const bountyApiCall = async () => {
-    try { 
+    try {
       const res = await fetch(
-      "https://firestore.googleapis.com/v1/projects/star-wars-weapons-info/databases/(default)/documents/bounties"
-    );
-    const bountJson = await res.json();
+        "https://firestore.googleapis.com/v1/projects/star-wars-weapons-info/databases/(default)/documents/bounties"
+      );
+      const bountJson = await res.json();
       for (const element of bountJson.documents) {
-        const newObject = []
+        const newObject = [];
+        newObject.name = element.fields.name.stringValue;
+        newObject.url1 = element.fields.url1.stringValue;
+        newObject.bounty = element.fields.bounty.integerValue;
+
+        setBountyData((prevState) => [...prevState, newObject]);
       }
+    } catch (err) {
+      console.log(err.message);
+    }
+  };
 
   useEffect(() => {
     makeApiCall();
+    bountyApiCall();
   }, []);
 
   // async function getApi() {
@@ -100,7 +110,7 @@ function App() {
       />
 
       <Route exact path="/bounties">
-        <Bounties></Bounties>
+        <Bounties bountyData={bountyData}></Bounties>
       </Route>
 
       <Route exact path="/searchpage">

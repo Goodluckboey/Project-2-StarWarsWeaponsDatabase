@@ -89,7 +89,7 @@ const YourCart = (props) => {
     <div style={{ color: "white", textAlign: "center" }}>
       {props.cart.length > 0 ? (
         <div>
-          <h1 style={{ position: "relative", left: "550px" }}>
+          <h1 style={{ position: "relative", textAlign: "center" }}>
             Please Review your purchases before submitting
           </h1>
           <div className="cartItemsDiv">{produceCartCards}</div>
@@ -98,7 +98,8 @@ const YourCart = (props) => {
               style={{
                 display: "flex",
                 marginLeft: " auto",
-                marginTop: "20px",
+                marginTop: "75px",
+                marginBottom: "100px",
               }}
             >
               <button
