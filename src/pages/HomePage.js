@@ -149,6 +149,7 @@ const HomePage = () => {
                   fontFamily: "thinnerFont",
                   fontSize: "50px",
                   padding: "50px",
+                  backgroundColor: "rgba(10,10,10,0.5)",
                 }}
               >
                 Sign up now for a chance <br />
