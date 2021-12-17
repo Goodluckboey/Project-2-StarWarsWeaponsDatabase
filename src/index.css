@@ -134,7 +134,6 @@ h4 {
 
 .links {
   position: relative;
-  /* bottom: 0px; */
 }
 
 #searchbar {
@@ -155,7 +154,7 @@ h4 {
   padding: 30px;
   margin: 20px;
   float: left;
-  /* border: 2px solid rgb(39, 39, 39); */
+
   position: relative;
   display: flex;
   flex-direction: column;
@@ -170,7 +169,6 @@ h4 {
 }
 
 .shoppingCards {
-  /* vertical-align: 10px; */
   background-color: rgba(24, 24, 24, 0.95);
   color: rgb(234, 234, 250);
   width: 1500px;
@@ -335,7 +333,6 @@ body {
 #BM-Holder {
   position: relative;
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXlC10i3S-UirkAIfAZ973hPDhs3lAmML3ZQ&usqp=CAU");
-  /* background-color: rgb(8, 8, 8); */
   background-repeat: no-repeat;
   background-size: cover;
   width: 50%;
@@ -356,7 +353,6 @@ body {
 
 #SecondHolder {
   position: relative;
-  /* background-color: rgb(16, 16, 20); */
   background-image: url("https://media.istockphoto.com/vectors/grid-for-futuristic-hud-interface-line-technology-vector-pattern-vector-id1134391093?k=20&m=1134391093&s=612x612&w=0&h=J3vSi9uq-Ds5xqzz9-_5sliQZuNzZQYx2mD_ZE25lcE=");
   background-repeat: no-repeat;
   background-size: cover;
@@ -394,7 +390,6 @@ body {
   color: white;
   font-weight: lighter;
   font-size: 9px;
-  /* border: white 1px solid; */
   position: relative;
   top: 190px;
   height: 100px;

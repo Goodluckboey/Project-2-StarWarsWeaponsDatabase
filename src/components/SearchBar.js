@@ -2,13 +2,11 @@ import React from "react";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 const SearchBar = (props) => {
-  // const [searchData, setSearchData] = useState("");
-
   const history = useHistory();
 
   function searchCheck(e) {
     if (e.key === "Enter") {
-      e.preventDefault(); //WITHOUT THIS ONE MY SAVESTATE JUST RESETS ITSELF. NOTE TO SELF!!!!
+      e.preventDefault(); // FUTURE PATRICK TAKE NOTE: WITHOUT THIS ONE MY SAVESTATE JUST RESETS ITSELF.
       history.push({
         pathname: "/searchpage",
       });

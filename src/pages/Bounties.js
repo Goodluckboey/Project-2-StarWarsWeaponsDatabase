@@ -14,7 +14,6 @@ const Bounties = (props) => {
           speed: "14000",
           autoplay: true,
           type: "loop",
-          // pauseOnHover: true,
           easing: "linear",
           perPage: 4,
           pagination: false,

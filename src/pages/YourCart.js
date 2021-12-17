@@ -27,7 +27,6 @@ const YourCart = (props) => {
             alt=""
             style={{
               backgroundColor: "rgba(255,255,255,0.1)",
-              //   padding: "10px",
             }}
           ></img>
         </section>
@@ -135,7 +134,7 @@ const YourCart = (props) => {
           </div>
         </div>
       ) : (
-        <h1 style={{ position: "relative", left: "775px" }}>
+        <h1 style={{ position: "relative", left: "830px" }}>
           No purchases to review
         </h1>
       )}

@@ -23,12 +23,9 @@ const SearchPage = (props) => {
           return query.toLowerCase() === item.toLowerCase() ? (
             <div>
               <div className="individualCards">
-                {/* <div className="individualCards"> */}
                 <h1>{element.name}</h1>
-
                 <section className="image-container">
                   <img className="card-images" src={element.url1} alt=""></img>
-                  {/* <img className="card-images" src={element.url2} alt=""></img> */}
                 </section>
                 <ul className="list">
                   <li>{element.cost} Galactic Credits</li>

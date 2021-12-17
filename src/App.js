@@ -12,7 +12,6 @@ import YourCart from "./pages/YourCart";
 import SearchPage from "./pages/SearchPage";
 import FullCollection from "./pages/FullCollection";
 import Bounties from "./pages/Bounties";
-// import CheckOut from "./pages/CheckOut";
 
 // import firebase from "./library/firebase";
 // import { collection, getDocs } from "firebase/firestore";
@@ -23,6 +22,19 @@ function App() {
   const [cart, setCart] = useState([]);
   const [query, setQuery] = useState("");
   const [bountyData, setBountyData] = useState([]);
+
+  // async function getApi() {
+  //   const query = await getDocs(collection(db, "weapons"));
+
+  //   query.forEach((doc) => {
+  //     console.log(`${doc.id} => ${doc.data()}`);
+  //   });
+  // }
+  // getApi();
+
+  // const fetchData = () => {
+  //   db.collection('weapons')
+  // }
 
   const addToCart = (card) => {
     setCart((prevState) => [...prevState, card]);
@@ -82,19 +94,6 @@ function App() {
     bountyApiCall();
   }, []);
 
-  // async function getApi() {
-  //   const query = await getDocs(collection(db, "weapons"));
-
-  //   query.forEach((doc) => {
-  //     console.log(`${doc.id} => ${doc.data()}`);
-  //   });
-  // }
-  // getApi();
-
-  // const fetchData = () => {
-  //   db.collection('weapons')
-  // }
-
   return (
     <div>
       <NavBar arrayCheck={arrayCheck} cart={cart}></NavBar>
@@ -109,9 +108,6 @@ function App() {
         setSearchData={setSearchData}
         searchData={searchData}
       />
-      {/* <Route>
-        <CheckOut></CheckOut>
-      </Route> */}
       <Route exact path="/bounties">
         <Bounties bountyData={bountyData}></Bounties>
       </Route>

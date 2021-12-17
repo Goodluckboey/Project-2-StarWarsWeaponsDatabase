@@ -13,7 +13,6 @@ const FullCollection = (props) => {
             <h1>{element.name}</h1>
             <section className="image-container">
               <img className="card-images" src={element.url1} alt=""></img>
-              {/* <img className="card-images" src={element.url2} alt=""></img> */}
             </section>
             <ul className="list">
               <br />

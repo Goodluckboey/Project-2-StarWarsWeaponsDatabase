@@ -14,12 +14,8 @@ const Cannons = (props) => {
               <h1>{element.name}</h1>
               <section className="image-container">
                 <img className="card-images" src={element.url1} alt=""></img>
-                {/* <img className="card-images" src={element.url2} alt=""></img> */}
               </section>
-              <ul
-                className="list"
-  
-              >
+              <ul className="list">
                 <br />
                 <li style={{ fontWeight: "bold" }}>
                   {element.cost} Galactic Credits

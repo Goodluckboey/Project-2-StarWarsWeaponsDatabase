@@ -10,7 +10,7 @@ const HomePage = () => {
         options={{
           // gap: "0rem",
           speed: "3000",
-          // autoplay: true,
+          autoplay: true,
           type: "loop",
           pauseOnHover: true,
           wheel: true,
@@ -45,7 +45,6 @@ const HomePage = () => {
               <p
                 style={{
                   fontFamily: "A68MarketFont",
-                  // color: "rgb(253, 200, 132)",
                   color: "white",
                   letterSpacing: "2px",
                   lineHeight: "25px",
@@ -65,7 +64,6 @@ const HomePage = () => {
                       position: "relative",
                       top: "-85px",
                       padding: "7px",
-                      // fontFamily: "A68MarketFont",
                       fontWeight: "strong",
                       left: "300px",
                       margin: "10px",
@@ -83,7 +81,6 @@ const HomePage = () => {
                       position: "relative",
                       top: "-85px",
                       padding: "7px",
-                      // fontFamily: "A68MarketFont",
                       fontWeight: "bold",
                       left: "300px",
                       margin: "10px",
