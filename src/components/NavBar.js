@@ -49,6 +49,7 @@ const NavBar = (props) => {
           <h1 id="Num-Cart-Items">{numbOfCartItems}</h1>
         </div>
       </nav>
+      
     </header>
   );
 };

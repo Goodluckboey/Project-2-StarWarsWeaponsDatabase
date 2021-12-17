@@ -146,6 +146,37 @@ function App() {
       <Route exact path="/cannons">
         <Cannons fullData={fullData} addToCart={addToCart} />
       </Route>
+      <div className="disclaimer">
+        <p style={{ textAlign: "center" }}>Follow us!</p>
+        <div className="iconsGroup">
+          <a target="_blank" href="https://www.linkedin.com/in/patrick-boey/">
+            <img
+              className="icon"
+              src="https://cdn-icons-png.flaticon.com/512/281/281764.png"
+              alt=""
+            ></img>
+            <img
+              className="icon"
+              src="https://cdn-icons-png.flaticon.com/512/124/124010.png"
+              alt=""
+            ></img>
+            <img
+              className="icon"
+              src="https://cdn-icons-png.flaticon.com/512/281/281769.png"
+              alt=""
+            ></img>
+            <img
+              className="icon"
+              src="https://cdn-icons-png.flaticon.com/512/124/124034.png"
+              alt=""
+            ></img>{" "}
+          </a>
+        </div>
+        <p id="rightsReserved">
+          All products shown here are works of fiction, and only in use for
+          studying purposes. All Rights Reserved
+        </p>
+      </div>
     </div>
   );
 }

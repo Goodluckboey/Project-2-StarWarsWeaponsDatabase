@@ -7,6 +7,7 @@ const YourCart = (props) => {
   let sumTotal = 0;
 
   const produceCartCards = cartDataArray.map((element, index) => {
+    sumTotal += parseInt(element.cost);
     return (
       <div
         className="shoppingCards"
@@ -17,7 +18,6 @@ const YourCart = (props) => {
         data-aos-duration="500"
         style={{ backgroundColor: "rgba(53, 73, 84, 0.3)", borderRadius: "2%" }}
       >
-        {(sumTotal += parseInt(element.cost))}
         <h1 style={{ fontFamily: "A68MarketFont" }}>{element.name}</h1>
 
         <section>

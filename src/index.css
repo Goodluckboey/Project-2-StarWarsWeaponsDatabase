@@ -355,7 +355,10 @@ body {
 
 #SecondHolder {
   position: relative;
-  background-color: rgb(16, 16, 20);
+  /* background-color: rgb(16, 16, 20); */
+  background-image: url("https://media.istockphoto.com/vectors/grid-for-futuristic-hud-interface-line-technology-vector-pattern-vector-id1134391093?k=20&m=1134391093&s=612x612&w=0&h=J3vSi9uq-Ds5xqzz9-_5sliQZuNzZQYx2mD_ZE25lcE=");
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 50%;
   height: auto;
   text-align: center;
